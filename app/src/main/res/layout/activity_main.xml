@@ -21,7 +21,7 @@
         android:layout_height="102dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="34dp"
-        android:text="TextView"
+        android:text="Este bello templo posee muchas piedras preciosas y lujos dentro de ella, es muy conocida por su cuadro con corona de oro, zafiros, diamantes, perlas y esmeraldas."
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
