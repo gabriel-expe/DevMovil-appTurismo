@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="323dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#B1F1B3"
+        android:backgroundTint="#7DF880"
+        android:text="Santuario de las Lajas"
+        android:textAlignment="center"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="387dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/lajas1" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/cuylajas" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:srcCompat="@drawable/lajas3" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="156dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:text="Posee muchas piedras preciosas y lujos dentro de ella, es muy conocida por su cuadro con corona de oro, zafiros, diamantes, perlas y esmeraldas. Las llamadas lajas son piedras planas y anchas color gris que rodean todo el lugar."
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="156dp"
+        android:layout_height="80dp"
+        android:text="El plato típico de este lugar es el cuy, un roedor encontrado en esta región del país, el cual preparan asado con papa pastusa cocida y huevos al vapor."
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="156dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:text="los costos de hotel son realmente económicos, oscilan entre los $70.000 y los $120.000 pesos y son muy buenos lugares, cómodos y cálidos para el clima frio de la región"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="156dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        android:text="Para llegar al santuario lo primero que debes hacer es ir a Pasto y de ahí a Ipiales. En Ipiales tomas un taxi colectivo y demoras 15 minutos en llegar. Encontrarás un teleférico, que funciona de 7:00a.m. a 8:00p.m."
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
