@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Volcan Galeras"
+        android:text="La laguna de Cocha"
         android:textColor="#020202"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/imageView"

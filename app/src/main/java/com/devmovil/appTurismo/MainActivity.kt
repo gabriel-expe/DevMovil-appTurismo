@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         txtgaleras.setOnClickListener {
-            val intent: Intent = Intent(this, descripcionvolcangaleras::class.java)
+            val intent: Intent = Intent(this, volcangaleras::class.java)
             startActivity(intent)
         }
     }

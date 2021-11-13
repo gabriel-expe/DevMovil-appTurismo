@@ -3,9 +3,9 @@ package com.devmovil.appTurismo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class descripcionvolcangaleras : AppCompatActivity() {
+class volcangaleras : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_descripcionvolcangaleras)
+        setContentView(R.layout.descripciongaleras)
     }
 }

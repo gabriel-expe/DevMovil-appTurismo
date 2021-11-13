@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
         <activity
-            android:name=".descripcionvolcangaleras"
+            android:name=".volcangaleras"
             android:exported="false" />
-        <activity
-            android:name=".descripciongaleras"
+======= <activity
+            android:name=".Tumaco"
             android:exported="false" />
         <activity
             android:name=".LagunadelaCocha"
