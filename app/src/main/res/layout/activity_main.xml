@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C5CFDD"
     tools:context=".MainActivity">
 
     <TextView
@@ -28,41 +29,33 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="144dp"
-        android:layout_height="102dp"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
         android:layout_marginStart="36dp"
         android:layout_marginEnd="34dp"
         android:text="Este bello templo posee muchas piedras preciosas y lujos dentro de ella, es muy conocida por su cuadro con corona de oro, zafiros, diamantes, perlas y esmeraldas."
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtLajas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="41dp"
-        android:layout_height="12dp"
+        android:id="@+id/txtLajas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:linksClickable="true"
-        android:text="ver mas..."
-        android:textSize="8sp"
+        android:text="Ver mas..."
+        android:textSize="11sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/textView" />
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigationView"
-        android:layout_width="410dp"
-        android:layout_height="66dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
         android:shadowColor="#070707"
         android:text="Santuario de las Lajas"
         android:textColor="@color/black"
@@ -70,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.102"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/navigationView" />
+        tools:layout_editor_absoluteY="31dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -100,6 +93,7 @@
         android:layout_marginEnd="36dp"
         android:text="Volcan activo durante al menos los últimos 475 años a 9 km de San Juan de Pasto"
         android:textColor="#070707"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -110,6 +104,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Mas"
+        android:textSize="11sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/textView6" />
 
@@ -129,7 +125,7 @@
         android:justificationMode="inter_word"
         android:text="Esta laguna se esconde entre la neblina de los días más fríos y brilla con la luz de los más soleados. En medio de ella, descansa la Isla la Corota, de la cual se dice fue una mujer convertida en isla y santuario, por causa de los celos..."
         android:textColor="@color/black"
-        android:textSize="11sp"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -140,10 +136,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:fontFamily="sans-serif-black"
         android:text="Ver Más"
-        android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="11sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"

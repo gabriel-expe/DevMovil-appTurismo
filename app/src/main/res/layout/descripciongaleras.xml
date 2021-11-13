@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F1F4F1">
+        android:background="#C5CFDD">
 
         <TextView
             android:id="@+id/textView3"
@@ -19,8 +19,9 @@
             android:layout_marginTop="44dp"
             android:layout_marginEnd="8dp"
             android:text="Volcan Galeras"
+            android:fontFamily="sans-serif-black"
             android:textAlignment="center"
-            android:textColor="#090808"
+            android:textColor="@android:color/holo_blue_dark"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

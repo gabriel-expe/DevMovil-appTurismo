@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C5CFDD"
     tools:context=".Tumaco">
 
     <com.google.android.material.navigation.NavigationView
@@ -21,8 +22,8 @@
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif-black"
         android:text="Tumaco"
-        android:textColor="@color/teal_200"
-        android:textSize="20sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navigationView" />
@@ -42,7 +43,6 @@
         android:layout_width="296dp"
         android:layout_height="84dp"
         android:layout_marginTop="28dp"
-        android:fontFamily="sans-serif-black"
         android:justificationMode="inter_word"
         android:text="Ubicación: Departamento de Nariño, sur occidente de Colombia.\nAltura: 5.000 m.s.n.m.\nTemperatura: 26°C.\nSuperficie de Tumaco: 900 km²"
         android:textColor="@color/black"

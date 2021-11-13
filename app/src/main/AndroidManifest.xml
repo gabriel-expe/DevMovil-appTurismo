@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-
+        <activity
+            android:name=".ActividadSantuarioLajas"
+            android:exported="false" />
         <activity
             android:name=".volcangaleras"
             android:exported="false" />
-======= <activity
+        <activity
             android:name=".Tumaco"
             android:exported="false" />
         <activity
