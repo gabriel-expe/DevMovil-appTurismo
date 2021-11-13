@@ -14,5 +14,9 @@ class MainActivity : AppCompatActivity() {
             val intent: Intent = Intent(this, LagunadelaCocha::class.java)
             startActivity(intent)
         }
+        txtgaleras.setOnClickListener {
+            val intent: Intent = Intent(this, descripcionvolcangaleras::class.java)
+            startActivity(intent)
+        }
     }
 }

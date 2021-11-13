@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".descripcionvolcangaleras"
+            android:exported="false" />
+        <activity
+            android:name=".descripciongaleras"
+            android:exported="false" />
+        <activity
             android:name=".LagunadelaCocha"
             android:exported="false" />
         <activity
