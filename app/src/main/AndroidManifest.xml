@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ActividadSantuarioLajas"
+            android:exported="false" />
+        <activity
+            android:name=".volcangaleras"
+            android:exported="false" />
+        <activity
+            android:name=".Tumaco"
+            android:exported="false" />
+        <activity
             android:name=".LagunadelaCocha"
             android:exported="false" />
         <activity

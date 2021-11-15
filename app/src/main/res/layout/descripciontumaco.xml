@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5CFDD"
+    tools:context=".Tumaco">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Tumaco"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navigationView" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="375dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/tumacouno" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="296dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="28dp"
+        android:justificationMode="inter_word"
+        android:text="Ubicación: Departamento de Nariño, sur occidente de Colombia.\nAltura: 5.000 m.s.n.m.\nTemperatura: 26°C.\nSuperficie de Tumaco: 900 km²"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="375dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="28dp"
+        android:justificationMode="inter_word"
+        android:text=" San Andrés de Tumaco es “la perla del pacífico de Colombia”, nombrado así a raíz de un hallazgo de la perla preciosa más grande encontrada en el mundo. No obstante, sus habitantes preservan su nombramiento debido a la belleza natural que contempla esta isla en la llanura del pacífico colombiano.\n \n En la cabecera municipal de Tumaco se encuentra la Playa del Morro con su arco natural, sitio de gran auge turístico rodeado de hoteles, restaurantes y bailaderos adecuados para recibir a sus visitantes. A 30 minutos en lancha por mar o río, se encuentra la Playa de Bocagrande, bordeada por aguas transparentes y arenas finas y plateadas que embelesan al llegar."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
