@@ -7,15 +7,23 @@
     android:background="#C5CFDD"
     tools:context=".ActividadSantuarioLajas">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="323dp"
         android:layout_height="37dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="8dp"
-        android:text="Santuario de las Lajas"
         android:fontFamily="sans-serif-black"
+        android:text="Santuario de las Lajas"
         android:textAlignment="center"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="24sp"
