@@ -60,6 +60,7 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
 
+
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

@@ -8,7 +8,10 @@
         android:label=""
         android:roundIcon="@drawable/logoparcial"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
         <activity
             android:name=".card_layout"
             android:exported="false" />
