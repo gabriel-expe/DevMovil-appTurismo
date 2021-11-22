@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:card_view="http://schemas.android.com/tools"
     android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_margin="16dp"
     card_view:cardBackgroundColor="·227C90"
+    card_view:cardContentPadding="4dp"
     card_view:cardCornerRadius="20dp"
-    card_view:cardElevation="6dp"
-    card_view:cardContentPadding="4dp">
+    card_view:cardElevation="6dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
