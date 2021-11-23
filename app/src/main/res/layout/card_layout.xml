@@ -49,16 +49,14 @@
             android:textColor="@color/black"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/item_puntuacion"
+        <RatingBar
+            android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/item_detalle"
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
-            android:text="Puntuacion"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            card_view:ignore="SpeakableTextPresentCheck" />
 
 
     </RelativeLayout>
