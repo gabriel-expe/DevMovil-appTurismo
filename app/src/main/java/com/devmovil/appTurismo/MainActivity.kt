@@ -5,12 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import androidx.appcompat.widget.Toolbar
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.card_layout.*
+import com.google.gson.Gson
 
 
 // Estas lineas de còdigo son para volver a implementar clicklistener
@@ -40,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var listaSitios: ArrayList<listPOI>
+    private lateinit var listaSitios: ArrayList<Lugar>
     private lateinit var turismoAdapter: TurismoAdapter
     private lateinit var sitiosrecyclerView: RecyclerView
 
@@ -94,28 +92,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    //Esta funciòn crea una maqueta de objetos
+    //Consumir información del JSON
 
-    private fun createMockSitios():  ArrayList<listPOI>{
-        return arrayListOf (
-            listPOI(
-                nombre = "Las Lajas",
-                descripcion = "Lugar que conecta con la espiritualidad"
-            ),
-            listPOI(
-                nombre = "Galeras",
-                descripcion = "Apasionante volcan que convive en paz con su vecino"
-            ),
-            listPOI(
-                nombre = "Laguna de la Cocha",
-                descripcion = "Basta cuerpo de agus cristalinas que invita a la reflexion"
-            ),
-            listPOI(
-                nombre = "Tumaco",
-                descripcion = "Vibrante pueblo frente al mar pacifico"
-            )
-
-        )
+    private fun createMockSitios():  ArrayList<Lugar>{
+        val lugaresString : String = applicationContext.assets.open("lugares.json").bufferedReader().use{ it.readText() }
+        val gson = Gson()
+        val data = gson.fromJson(lugaresString,ListaLugares::class.java)
+        return data
     }
 
 }

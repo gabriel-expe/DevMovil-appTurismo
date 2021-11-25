@@ -1,0 +1,26 @@
+[
+  {
+    "id" : "0001",
+    "urlImagen":"https://i.imgur.com/Hz7Akrt.jpg",
+    "nombre":"Santuario de las Lajas",
+    "descripcion":"Este bello templo posee muchas piedras preciosas y lujos dentro de ella, es muy conocida por su cuadro con corona de oro, zafiros, diamantes, perlas y esmeraldas."
+  },
+  {
+    "id" : "0002",
+    "urlImagen":"https://i.imgur.com/HWcvNxP.jpg",
+    "nombre":"Volcán Galeras",
+    "descripcion":"Volcan activo durante al menos los últimos 475 años a 9 km de San Juan de Pasto"
+  },
+  {
+    "id" : "0003",
+    "urlImagen":"https://i.imgur.com/En5oBqs.jpg",
+    "nombre":"Tumaco",
+    "descripcion":"Playa"
+  },
+  {
+    "id" : "0004",
+    "urlImagen":"https://i.imgur.com/Zxmx38n.jpg",
+    "nombre":"Laguna de la Cocha",
+    "descripcion":"Esta laguna se esconde entre la neblina de los días más fríos y brilla con la luz de los más soleados. En medio de ella, descansa la Isla la Corota, de la cual se dice fue una mujer convertida en isla y santuario, por causa de los celos..."
+  }
+]

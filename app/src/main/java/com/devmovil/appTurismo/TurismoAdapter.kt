@@ -3,10 +3,12 @@ package com.devmovil.appTurismo
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 
-class TurismoAdapter (private val listaSitios: ArrayList <listPOI>) :
+class TurismoAdapter (private val listaSitios: ArrayList <Lugar>) :
 RecyclerView.Adapter<TurismoAdapter.ViewHolder> (){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,14 +32,12 @@ RecyclerView.Adapter<TurismoAdapter.ViewHolder> (){
 
         private var Nombre: TextView = itemView.findViewById(R.id.Nombre)
         private var Descripcion: TextView = itemView.findViewById(R.id.Descripcion)
-        //private var Image: ImageView = itemView.findViewById(R.id.Image)
+        private var Imagen: ImageView = itemView.findViewById(R.id.item_image)
 
-        fun bind(poi:listPOI){
+        fun bind(poi:Lugar){
             Nombre.text = poi.nombre
             Descripcion.text = poi.descripcion
-
-
+            Picasso.get().load(poi.urlImagen).into(Imagen)
         }
-
     }
 }
