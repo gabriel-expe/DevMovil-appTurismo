@@ -33,7 +33,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/Titulo"
                 android:layout_width="323dp"
                 android:layout_height="37dp"
                 android:layout_marginStart="8dp"
@@ -49,17 +49,17 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/Image"
                 android:layout_width="322dp"
                 android:layout_height="153dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="12dp"
-                app:layout_constraintStart_toStartOf="@+id/textView3"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="@+id/Titulo"
+                app:layout_constraintTop_toBottomOf="@+id/Titulo"
                 app:srcCompat="@drawable/volcangaleras1" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/Descripcion"
                 android:layout_width="320dp"
                 android:layout_height="118dp"
                 android:layout_marginStart="4dp"
@@ -68,8 +68,8 @@
                 android:text="Localizacion: El volcán Galeras se localiza en el Departamento de Nariño, aproximadamente a 9 km al occidente de la Ciudad de San Juan de Pasto, capital de este departamento, en las coordenadas 1° 13' 43,8&quot; de latitud norte y 77° 21' 33,0&quot; de longitud oeste y con una altura de 4276 msnm."
                 android:textColor="#070707"
                 android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/imageView5"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                app:layout_constraintStart_toStartOf="@+id/Image"
+                app:layout_constraintTop_toBottomOf="@+id/Image" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -79,9 +79,9 @@
                 android:justificationMode="inter_word"
                 android:text="Que ver y hacer: Los turistas tienen una variedad de actividades relacionadas con la observaciòn del volcan y las reservas biològicas cercanas, se pueden practicar deportes como el montañismo, el enduro, tambièn se practica la observación de flora y fauna en especial aves."
                 android:textColor="#0E0E0E"
-                app:layout_constraintEnd_toEndOf="@+id/textView10"
-                app:layout_constraintStart_toStartOf="@+id/textView10"
-                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+                app:layout_constraintEnd_toEndOf="@+id/Descripcion"
+                app:layout_constraintStart_toStartOf="@+id/Descripcion"
+                app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
 
             <ImageView
                 android:id="@+id/imageView7"

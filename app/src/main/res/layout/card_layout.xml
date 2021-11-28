@@ -58,6 +58,7 @@
             android:layout_below="@+id/Descripcion"
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
+            android:visibility="visible"
             card_view:ignore="SpeakableTextPresentCheck" />
 
 

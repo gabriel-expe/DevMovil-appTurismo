@@ -1,10 +1,10 @@
 package com.devmovil.appTurismo
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         listaSitios= createMockSitios()
 
-        turismoAdapter = TurismoAdapter(listaSitios)
+        turismoAdapter =  TurismoAdapter(listaSitios, onItemClicked={onListaLugaresClicked (it)} )
 
         sitiosrecyclerView.apply {
             layoutManager = LinearLayoutManager(context)
@@ -69,6 +69,13 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+    private fun onListaLugaresClicked(lugar: Lugar) {
+        val intent = Intent(this, Detalle::class.java)
+        intent.putExtra("lugar",lugar)
+        startActivity(intent)
+    }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 

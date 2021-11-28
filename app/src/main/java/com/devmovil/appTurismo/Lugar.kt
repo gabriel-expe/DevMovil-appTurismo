@@ -2,6 +2,7 @@ package com.devmovil.appTurismo
 
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 data class Lugar(
     @SerializedName("descripcion")
@@ -12,4 +13,4 @@ data class Lugar(
     val nombre: String,
     @SerializedName("urlImagen")
     val urlImagen: String
-)
+) : Serializable
