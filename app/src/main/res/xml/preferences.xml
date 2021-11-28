@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="bottom">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check1_pref"
+        android:summary="Activar notificaciones"
+        android:title="Notificaciones" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check2_pref"
+        android:summary="Activar sonido de notificaciones"
+        android:title="Sonido de notificaciones" />
+
+</PreferenceScreen>

@@ -2,13 +2,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.devmovil.appTurismo">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="App Turismo"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/logoparcial"
+        android:label=""
+        android:roundIcon="@drawable/logoparcial"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
         <activity
             android:name=".ActividadSantuarioLajas"
             android:exported="false" />
@@ -29,7 +35,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="Detalle"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

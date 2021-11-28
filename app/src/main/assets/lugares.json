@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "0001",
+    "urlImagen":"https://i.imgur.com/Hz7Akrt.jpg",
+    "nombre":"Santuario de las Lajas",
+    "descripcion":"Este bello templo posee muchas piedras preciosas y lujos dentro de ella, es muy conocida por su cuadro con corona de oro, zafiros, diamantes, perlas y esmeraldas.",
+    "ubicacion":"Sur de Nariño",
+    "temperatura": "10-15 Grados Centigrados ",
+    "actividades":"Actividad religiosa, caminatas",
+    "parrafo":"El Santuario de Nuestra Señora del Rosario de Las Lajas es un templo y basílica para el culto cristiano y veneración de Nuestra Señora de Las Lajas el edificio principal mide 27,50 metros, la altura hasta la torre es de 100 metros y el puente mide 50 metros de alto por 17 metros de ancho y 20 de largo. Este santuario se ubica en Ipiales, en el departamento de Nariño, al sur de Colombia y es destino de peregrinación y turismo desde el siglo xviii."
+
+  },
+  {
+    "id" : "0002",
+    "urlImagen":"https://i.imgur.com/HWcvNxP.jpg",
+    "nombre":"Volcán Galeras",
+    "descripcion":"Volcan activo durante al menos los últimos 475 años a 9 km de San Juan de Pasto",
+    "ubicacion":"Centro-Oriente de Nariño",
+    "temperatura": "3-15 Grados Centigrados ",
+    "actividades":"Montañismo, enduro, avistamiento de aves",
+    "parrafo":"Con una altura de 4,276 metros sobre el nivel del mar, el volcán Galeras permanece emplazado en el suroeste de Colombia, a unos 9 kilómetros de distancia de la ciudad de San Juan de Pasto. Ha sido conocido también como “volcán de Pasto”, y los nativos Quillacingas lo llamaban Urcunina, que significa “montaña de fuego”. Su nombre actual fue colocado por los españoles, quienes lo encontraron parecido a unos grandes barcos llamados galeras"
+
+  },
+  {
+    "id" : "0003",
+    "urlImagen":"https://i.imgur.com/En5oBqs.jpg",
+    "nombre":"Tumaco",
+    "descripcion":" San Andrés de Tumaco es “la perla del pacífico de Colombia”, nombrado así a raíz de un hallazgo de la perla preciosa más grande encontrada en el mundo.",
+    "ubicacion":"Occidente de Nariño",
+    "temperatura": "27-30 Grados Centigrados ",
+    "actividades":"Buceo, pesca, arqueologìa, recorrido por la ciudad, avistamiento de aves y ballenas",
+    "parrafo":"Tumaco es un municipio colombiano ubicado en el departamento de Nariño, cuya cabecera municipal ostenta el nombre de San Andrés de Tumaco. Se sitúa a 300 kilómetros de San Juan de Pasto, la capital del departamento. Tumaco es conocido como la «Perla del Pacífico» de Colombia. Entre sus paisajes marítimos destacan el cabo Manglares, la bahía de Tumaco, La Barra, El Morro y su cabecera municipal o área urbana."
+  },
+  {
+    "id" : "0004",
+    "urlImagen":"https://i.imgur.com/Zxmx38n.jpg",
+    "nombre":"Laguna de la Cocha",
+    "descripcion":"Esta laguna se esconde entre la neblina de los días más fríos y brilla con la luz de los más soleado",
+    "ubicacion":"Oriente de Nariño",
+    "temperatura": "3-15 Grados Centigrados ",
+    "actividades":"Descanso, caminatas",
+    "parrafo":"La laguna se alimenta por varias corrientes de agua, siendo la principal el río Encanto, y desagua por el río Guamuez al río Putumayo.Posee una porción de territorio insular llamada La Corota y alberga un santuario de fauna y flora bajo la supervisión del sistema de parques nacionales. En ella se encuentra el hábitat de diversas aves y plantas, muchas de ellas endémicas. Además, alrededor del lago existe cerca de una veintena de reservas naturales de carácter privado, al cuidado de los habitantes de la región."
+  }
+]

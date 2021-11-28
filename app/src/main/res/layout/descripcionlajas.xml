@@ -3,9 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#C5CFDD"
-    tools:context=".ActividadSantuarioLajas">
+    android:layout_height="match_parent">
 
     <include
         android:id="@+id/toolbar"
@@ -22,10 +20,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="75dp"
         android:layout_marginEnd="8dp"
-        android:fontFamily="sans-serif-black"
+        android:background="#B1F1B3"
+        android:backgroundTint="#7DF880"
         android:text="Santuario de las Lajas"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="#090808"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,3 +110,4 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
