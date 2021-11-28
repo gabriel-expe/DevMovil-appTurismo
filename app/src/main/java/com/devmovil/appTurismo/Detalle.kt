@@ -22,7 +22,10 @@ class Detalle : AppCompatActivity() {
 
         with(detalleBinding){
             Titulo.text = lugar.nombre
-            Descripcion.text = lugar.descripcion
+            Descripcion.text = lugar.parrafo
+            Ubicacion.text = lugar.ubicacion
+            Temperatura.text = lugar.temperatura
+            Actividades.text = lugar.actividades
             Picasso.get().load(lugar.urlImagen).into(Image)
         }
 

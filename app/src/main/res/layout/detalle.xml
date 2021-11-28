@@ -13,21 +13,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="688dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="1dp"
-        android:background="#E3E0E0"
-        android:backgroundTint="#F8F5F5"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:background="#F8F5F5"
+        android:backgroundTint="#F8F2F2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.277">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -52,8 +47,8 @@
 
             <ImageView
                 android:id="@+id/Image"
-                android:layout_width="315dp"
-                android:layout_height="320dp"
+                android:layout_width="317dp"
+                android:layout_height="284dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="12dp"
                 app:layout_constraintStart_toStartOf="@+id/Titulo"
@@ -61,17 +56,50 @@
                 app:srcCompat="@drawable/volcangaleras1" />
 
             <TextView
-                android:id="@+id/Descripcion"
-                android:layout_width="310dp"
-                android:layout_height="170dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="24dp"
-                android:justificationMode="inter_word"
-                android:text="Localizacion: El volcán Galeras se localiza en el Departamento de Nariño, aproximadamente a 9 km al occidente de la Ciudad de San Juan de Pasto, capital de este departamento, en las coordenadas 1° 13' 43,8&quot; de latitud norte y 77° 21' 33,0&quot; de longitud oeste y con una altura de 4276 msnm."
+                android:id="@+id/Ubicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicaciòn"
                 android:textColor="#070707"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@+id/Image"
                 app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+            <TextView
+                android:id="@+id/Temperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="temperatura"
+                android:textColor="#070707"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/Ubicacion"
+                app:layout_constraintTop_toBottomOf="@+id/Ubicacion" />
+
+            <TextView
+                android:id="@+id/Descripcion"
+                android:layout_width="317dp"
+                android:layout_height="169dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="37dp"
+                android:justificationMode="inter_word"
+                android:text="Localizacion: El volcán Galeras se localiza en el Departamento de Nariño, aproximadamente a 9 km al occidente de la Ciudad de San Juan de Pasto, capital de este departamento, en las coordenadas 1° 13' 43,8&quot; de latitud norte y 77° 21' 33,0&quot; de longitud oeste y con una altura de 4276 msnm."
+                android:textColor="#070707"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/Temperatura"
+                app:layout_constraintTop_toBottomOf="@+id/Temperatura" />
+
+            <TextView
+                android:id="@+id/Actividades"
+                android:layout_width="312dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="actividades"
+                android:textColor="#070707"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/Descripcion"
+                app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

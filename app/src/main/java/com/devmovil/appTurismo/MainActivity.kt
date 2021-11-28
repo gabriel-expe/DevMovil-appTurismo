@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
 
     //Consumir información del JSON
 
-    private fun createMockSitios():  ArrayList<Lugar>{
+    private fun createMockSitios(): ArrayList<Lugar> {
         val lugaresString : String = applicationContext.assets.open("lugares.json").bufferedReader().use{ it.readText() }
         val gson = Gson()
         val data = gson.fromJson(lugaresString,ListaLugares::class.java)
