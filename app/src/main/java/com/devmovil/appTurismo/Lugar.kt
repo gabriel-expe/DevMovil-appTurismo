@@ -10,7 +10,7 @@ data class Lugar(
     @SerializedName("descripcion")
     val descripcion: String,
     @SerializedName("id")
-    val id: String,
+    val id: String,git
     @SerializedName("nombre")
     val nombre: String,
     @SerializedName("parrafo")
