@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".SettingsActivity"
+            android:name=".preferences.SettingsActivity"
             android:exported="false" />
 
         <activity
@@ -28,7 +28,7 @@
             android:name=".LagunadelaCocha"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +44,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name="Detalle"
+            android:name=".detalle.Detalle"
             android:exported="true"
             android:screenOrientation="portrait"/>
     </application>
