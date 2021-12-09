@@ -7,4 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="verde_logo">#7FD858</color>
+    <color name="cardviewColor">#98a4c1</color>
 </resources>
