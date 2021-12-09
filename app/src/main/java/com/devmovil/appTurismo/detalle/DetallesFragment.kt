@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.Toolbar
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.devmovil.appTurismo.R
 import com.devmovil.appTurismo.databinding.FragmentDetallesBinding
@@ -32,6 +34,11 @@ class DetallesFragment : Fragment() {
             Parrafo.text = lugar.parrafo
             Actividades.text = lugar.actividades
             Picasso.get().load(lugar.urlImagen).into(Image)
+
+            mapButton.setOnClickListener{
+                findNavController().navigate(DetallesFragmentDirections.actionDetallesFragmentToMapsFragment())
+            }
+
         }
     }
 

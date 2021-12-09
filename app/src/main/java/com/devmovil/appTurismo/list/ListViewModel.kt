@@ -24,6 +24,7 @@ class ListViewModel: ViewModel() {
         }
     }
 
+
     fun loadMockFlowersFromJson(lugaresString: InputStream?) {
         val lugaresString=lugaresString?.bufferedReader().use {it!!.readText()}
         val gson = Gson()

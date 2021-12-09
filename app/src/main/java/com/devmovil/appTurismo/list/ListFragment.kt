@@ -2,11 +2,10 @@ package com.devmovil.appTurismo.list
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.*
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,6 +17,9 @@ import com.devmovil.appTurismo.model.Lugar
 import com.devmovil.appTurismo.preferences.SettingsActivity
 import com.google.gson.Gson
 
+
+
+
 class ListFragment : Fragment() {
 
     private lateinit var listBinding: FragmentListBinding
@@ -25,15 +27,17 @@ class ListFragment : Fragment() {
     private lateinit var turismoAdapter : TurismoAdapter
     private var listLugares: ArrayList<Lugar> = arrayListOf()
 
+
     override fun onCreateView(
+
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         listBinding = FragmentListBinding.inflate(inflater,container,false)
         listViewModel = ViewModelProvider(this)[ListViewModel::class.java]
-
         return listBinding.root
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -49,6 +53,8 @@ class ListFragment : Fragment() {
             adapter = turismoAdapter
             setHasFixedSize(false)
         }
+
+
     }
 
     private fun onlugaresloadedSubscribe(result: ArrayList<Lugar>){
