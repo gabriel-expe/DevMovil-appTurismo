@@ -13,6 +13,7 @@ import com.squareup.picasso.Picasso
 class Detalle : AppCompatActivity() {
 
     private lateinit var detalleBinding: DetalleBinding
+    private lateinit var detalleViewModel: DetalleViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
