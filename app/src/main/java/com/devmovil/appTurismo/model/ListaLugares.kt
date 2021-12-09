@@ -1,4 +1,4 @@
-package com.devmovil.appTurismo.list
+package com.devmovil.appTurismo.model
 
 
 class ListaLugares : ArrayList<Lugar>()

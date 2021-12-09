@@ -1,5 +1,4 @@
-package com.devmovil.appTurismo.list
-
+package com.devmovil.appTurismo.model
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
@@ -10,7 +9,7 @@ data class Lugar(
     @SerializedName("descripcion")
     val descripcion: String,
     @SerializedName("id")
-    val id: String,git
+    val id: String,
     @SerializedName("nombre")
     val nombre: String,
     @SerializedName("parrafo")
