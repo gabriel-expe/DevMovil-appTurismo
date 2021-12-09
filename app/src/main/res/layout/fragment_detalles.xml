@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".volcangaleras">
+    tools:context=".detalle.DetallesFragment">
 
     <include
         android:id="@+id/toolbar"
@@ -17,10 +17,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="116dp"
         android:background="#F8F5F5"
         android:backgroundTint="#F8F2F2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -53,7 +54,7 @@
                 android:layout_marginTop="12dp"
                 app:layout_constraintStart_toStartOf="@+id/Titulo"
                 app:layout_constraintTop_toBottomOf="@+id/Titulo"
-                app:srcCompat="@drawable/volcangaleras1" />
+                app:srcCompat="@drawable/departamentodenarino" />
 
             <TextView
                 android:id="@+id/Ubicacion"
@@ -76,7 +77,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/Ubicacion" />
 
             <TextView
-                android:id="@+id/Descripcion"
+                android:id="@+id/Parrafo"
                 android:layout_width="317dp"
                 android:layout_height="169dp"
                 android:layout_marginTop="24dp"
@@ -90,16 +91,28 @@
                 app:layout_constraintTop_toBottomOf="@+id/Temperatura" />
 
             <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Actividades"
+                app:layout_constraintStart_toStartOf="@+id/Parrafo"
+                app:layout_constraintTop_toBottomOf="@+id/Parrafo" />
+
+            <TextView
                 android:id="@+id/Actividades"
-                android:layout_width="312dp"
-                android:layout_height="84dp"
+                android:layout_width="306dp"
+                android:layout_height="83dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:text="actividades"
                 android:textColor="#070707"
                 android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="@+id/Descripcion"
-                app:layout_constraintTop_toBottomOf="@+id/Descripcion" />
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

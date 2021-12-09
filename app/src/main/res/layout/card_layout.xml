@@ -28,6 +28,7 @@
             android:layout_marginRight="16dp"
             app:srcCompat="@drawable/departamentodenarino"/>
 
+
         <TextView
             android:id="@+id/Nombre"
             android:layout_width="match_parent"
@@ -41,7 +42,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/Descripcion"
+            android:id="@+id/Parrafo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/Nombre"
@@ -55,7 +56,7 @@
             android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/Descripcion"
+            android:layout_below="@+id/Parrafo"
             android:layout_toEndOf="@+id/item_image"
             android:layout_toRightOf="@+id/item_image"
             android:visibility="visible"

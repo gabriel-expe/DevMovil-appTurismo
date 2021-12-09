@@ -1,5 +1,4 @@
-package com.devmovil.appTurismo.list
-
+package com.devmovil.appTurismo.model
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable

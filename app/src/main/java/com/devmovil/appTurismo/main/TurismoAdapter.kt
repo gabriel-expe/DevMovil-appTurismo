@@ -7,12 +7,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.devmovil.appTurismo.R
-import com.devmovil.appTurismo.list.Lugar
+import com.devmovil.appTurismo.model.Lugar
 import com.squareup.picasso.Picasso
 
 class TurismoAdapter (
-    private val listaSitios: ArrayList <Lugar>,
-    private val onItemClicked: (Lugar) -> Unit
+    private val listLugares : ArrayList<Lugar>,
+    private val onItemClicked : (Lugar) -> Unit
 ) : RecyclerView.Adapter<TurismoAdapter.ViewHolder> () {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -21,31 +21,32 @@ class TurismoAdapter (
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val lugar = listLugares[position]
+        holder.itemView.setOnClickListener { onItemClicked(listLugares[position]) }
+        holder.bind(lugar)
+    }
 
-        val lugar = listaSitios[position]
-        holder.itemView.setOnClickListener { onItemClicked(listaSitios[position])}
-            holder.bind(lugar)
+    override fun getItemCount(): Int = listLugares.size
 
+    fun appendItems(newItems: ArrayList<Lugar>) {
+        listLugares.clear()
+        listLugares.addAll(newItems)
+        notifyDataSetChanged()
+    }
+
+
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
+
+        private val nameTextView : TextView = view.findViewById(R.id.Nombre)
+        private val descripcionTextView : TextView = view.findViewById(R.id.Parrafo)
+        private val pictureImageView : ImageView = view.findViewById(R.id.item_image)
+
+        fun bind (lugar : Lugar) {
+            nameTextView.text = lugar.nombre
+            descripcionTextView.text = lugar.descripcion
+            Picasso.get().load(lugar.urlImagen).into(pictureImageView)
         }
-
-
-        override fun getItemCount(): Int {
-            return listaSitios.size
-        }
-
-
-        class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-            private var Nombre: TextView = itemView.findViewById(R.id.Nombre)
-            private var Descripcion: TextView = itemView.findViewById(R.id.Descripcion)
-            private var Imagen: ImageView = itemView.findViewById(R.id.item_image)
-
-            fun bind(poi: Lugar) {
-                Nombre.text = poi.nombre
-                Descripcion.text = poi.descripcion
-                Picasso.get().load(poi.urlImagen).into(Imagen)
-            }
-        }
+    }
     }
 
 

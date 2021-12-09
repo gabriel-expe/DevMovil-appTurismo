@@ -1,6 +1,8 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
+}
 
 android {
     compileSdk 31
@@ -32,6 +34,7 @@ android {
     buildFeatures{
         viewBinding true
     }
+
 }
 
 dependencies {
@@ -45,6 +48,7 @@ dependencies {
     implementation 'androidx.preference:preference:1.1.1'
     implementation 'com.squareup.picasso:picasso:2.8'
     implementation 'com.google.code.gson:gson:2.8.9'
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")
 
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0'
@@ -53,6 +57,9 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
