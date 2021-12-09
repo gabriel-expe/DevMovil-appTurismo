@@ -6,15 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
+    app:cardElevation="4dp"
     card_view:cardBackgroundColor="·227C90"
     card_view:cardContentPadding="4dp"
-    card_view:cardCornerRadius="20dp"
+    app:cardCornerRadius="16dp"
     card_view:cardElevation="6dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@color/cardviewColor"
         android:padding="16dp">
 
         <ImageView
