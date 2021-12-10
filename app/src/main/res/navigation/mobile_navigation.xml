@@ -25,13 +25,17 @@
         <action
             android:id="@+id/action_detallesFragment_to_mapsFragment"
             app:destination="@id/mapsFragment" />
-        <action
-            android:id="@+id/action_detallesFragment_to_listFragment2"
-            app:destination="@id/listFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.devmovil.appTurismo.maps.MapsFragment"
         android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="latitud"
+            app:argType="string" />
+        <argument
+            android:name="longitud"
+            app:argType="string" />
+    </fragment>
 </navigation>

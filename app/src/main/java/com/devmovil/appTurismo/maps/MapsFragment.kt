@@ -8,8 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.devmovil.appTurismo.R
-import com.devmovil.appTurismo.detalle.DetallesFragmentDirections
+import com.devmovil.appTurismo.databinding.FragmentMapsBinding
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -20,10 +21,16 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class MapsFragment : Fragment() {
 
+    private val args:MapsFragmentArgs by navArgs()
+    val lat = args.latitud
+    val lng = args.longitud
+
+
     private val callback = OnMapReadyCallback { googleMap ->
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val place = LatLng(lat.toDouble(), lng.toDouble())
+        googleMap.addMarker(MarkerOptions().position(place).title("Aquí está el lugar"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(place))
+
     }
 
     override fun onCreateView(

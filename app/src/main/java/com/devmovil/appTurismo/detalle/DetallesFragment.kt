@@ -36,7 +36,13 @@ class DetallesFragment : Fragment() {
             Picasso.get().load(lugar.urlImagen).into(Image)
 
             mapButton.setOnClickListener{
-                findNavController().navigate(DetallesFragmentDirections.actionDetallesFragmentToMapsFragment())
+                val lat = lugar.latitud
+                val lng = lugar.longitud
+                val actionDetail = DetallesFragmentDirections.actionDetallesFragmentToMapsFragment(lat, lng)
+
+                println(lat)
+                println(lng)
+                findNavController().navigate(actionDetail)
             }
 
         }
