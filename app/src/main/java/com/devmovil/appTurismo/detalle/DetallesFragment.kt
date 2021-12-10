@@ -40,8 +40,6 @@ class DetallesFragment : Fragment() {
                 val lng = lugar.longitud
                 val actionDetail = DetallesFragmentDirections.actionDetallesFragmentToMapsFragment(lat, lng)
 
-                println(lat)
-                println(lng)
                 findNavController().navigate(actionDetail)
             }
 

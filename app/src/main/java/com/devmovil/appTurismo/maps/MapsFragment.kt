@@ -22,14 +22,13 @@ import com.google.android.gms.maps.model.MarkerOptions
 class MapsFragment : Fragment() {
 
     private val args:MapsFragmentArgs by navArgs()
-    val lat = args.latitud
-    val lng = args.longitud
-
 
     private val callback = OnMapReadyCallback { googleMap ->
+        val lat = args.latitud
+        val lng = args.longitud
         val place = LatLng(lat.toDouble(), lng.toDouble())
         googleMap.addMarker(MarkerOptions().position(place).title("Aquí está el lugar"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(place))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(place,15F))
 
     }
 
