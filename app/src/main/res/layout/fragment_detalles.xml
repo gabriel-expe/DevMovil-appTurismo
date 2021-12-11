@@ -8,8 +8,8 @@
 
 
     <ScrollView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="724dp"
         android:background="#F8F5F5"
         android:backgroundTint="#F8F2F2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,8 +40,8 @@
 
             <ImageView
                 android:id="@+id/Image"
-                android:layout_width="317dp"
-                android:layout_height="284dp"
+                android:layout_width="314dp"
+                android:layout_height="241dp"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="12dp"
                 app:layout_constraintStart_toStartOf="@+id/Titulo"
@@ -70,8 +70,8 @@
 
             <TextView
                 android:id="@+id/Parrafo"
-                android:layout_width="317dp"
-                android:layout_height="169dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="37dp"
                 android:justificationMode="inter_word"
@@ -86,17 +86,17 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-black"
                 android:text="Actividades"
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/Parrafo"
                 app:layout_constraintTop_toBottomOf="@+id/Parrafo" />
 
             <TextView
                 android:id="@+id/Actividades"
-                android:layout_width="306dp"
-                android:layout_height="83dp"
-                android:layout_marginStart="4dp"
+                android:layout_width="251dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="4dp"
                 android:text="actividades"
                 android:textColor="#070707"
@@ -108,13 +108,11 @@
                 android:id="@+id/mapButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginEnd="36dp"
+                android:minHeight="48dp"
                 android:src="@drawable/ic_map"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/Actividades"
+                app:layout_constraintTop_toTopOf="@+id/Actividades"
                 tools:ignore="SpeakableTextPresentCheck" />
 
 
